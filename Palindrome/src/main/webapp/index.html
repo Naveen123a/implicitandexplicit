@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palindrome</title>
+</head>
+<body>
+<h1>Palindrome Checker</h1>
+<form action="PalindromeServlet" method="post">
+<label for="number">Enter a number:</label>
+<input type="text" id="number" name="number" required>
+<button type="Submit">Check</button>
+</form>
+
+<div id="result"></div>
+
+<script> 
+function handleResponse(response){
+	var resultDiv=document.getElementById("result");
+	resultDiv.innerHTML = response;
+}
+</script>
+</body>
+</html>
